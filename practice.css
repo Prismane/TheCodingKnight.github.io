@@ -6,22 +6,15 @@ html{
 
 body{
   margin: 0px 0px 0px 0px;
+  width: 100%:
 }
 
 #background{
   width: 100%;
-  position: absolute;
-  height: 100%;
+  position: absolute;  height: 100%;
 }
 
-.logo{
-  position: absolute;
-  width: 230px;
-  height: 200px;
-  margin-top: 10px;
-  margin-left: 10px;
-  border-radius: 12px 12px 12px 12px;
-}
+
 
 .list{
   position: absolute;
@@ -35,7 +28,7 @@ body{
   font-size: 17px;
   padding: 8px 40px 8px 40px;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: .5%;
 }
 
 #contact:hover{
@@ -62,17 +55,16 @@ body{
 
 li{
   font-family: Tahoma;
-  text-align: left;
   color: rgba(255,255,255,.8);
   float: right;
   padding: 10px 40px 10px 40px;
-  margin-left: 70px;
-  margin-top: 10px;
+  margin-left: 3%;
+  margin-top: .5%;
 }
 
 ul {
   list-style-type: none;
-  padding-right: 20px;
+  padding-right: 2%;
   display: inline;
   overflow: hidden;
 }
@@ -81,7 +73,7 @@ ul {
   position: absolute;
   color: white;
   margin-left: 23%;
-  margin-top: 575px;
+  margin-top: 30%;
   font-style: italic;
   font-size: 23px;
   animation: move 2s ease-in-out;
@@ -98,7 +90,7 @@ h1{
   font-family: tahoma;
   font-style: italic;
   margin-left: 32%;
-  margin-top: 210px;
+  margin-top: 10%;
   animation: move 2s ease-in-out;
   text-shadow: 1px 1px 5px black;
 }
@@ -115,10 +107,10 @@ h1{
 
 #contactImage{
   position: absolute;
-  width: 7%;
-  height: 12%;
+  width: 5%;
+  height: 9%;
   margin-left: 90%;
-  margin-top: 22%;
+  margin-top: 24%;
 }
 
 #emailImage{
@@ -137,10 +129,46 @@ h1{
   margin-left: 31%;
   animation: slide .5s ease-in-out infinite alternate-reverse ;
 }
+@media screen and (max-width:1650px){
+ li{
+   font-size: 14px;
+   padding-right: 5px;
+   padding-left: 30px;
+   margin-right: 0px;
+ }
+ #contact{
+   padding-right: 40px;
+   font-size: 14px;
+ }
+ h1{
+   font-size: 25px;
+   margin-left: 31%;
+ }
+ .motto{
+   font-size: 18px;
+   margin-left: 20%;
+   margin-top: 34%;
+}
+.userPhoto{
+  margin-left: 39%:
+}
+.contactInfo{
+  font-size: 13px;
+}
+#emailImage{
+  margin-top: 12%;
+}
+#contactImage{
+  margin-left: 87%;
+}
+.contentStart{
+  margin-top: 2%;
+}
+
+}
+
 
 .userPhoto:hover{
-
-
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;
     -webkit-animation-iteration-count: infinite;
