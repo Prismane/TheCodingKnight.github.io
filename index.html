@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Joshua Thompson</title>
+    <link rel="stylesheet" href="practice.css">
+  </head>
+  <body>
+    <img id="background" src="background.jpg" alt="Background Image">
+    <div class="cont">
+    <div class="header">
+      <div class="nav">
+       <div class="list">
+       <ul>
+        <a href="#" class="contact"><li id="contact" >CONTACT</li></a>
+        <a href="#"><li id="resume">RESUME</li></a>
+        <a href="#"><li id="about">ABOUT</li></a>
+        <a href="#"><li id="portfolio">PORTFOLIO</li></a>
+        <a href="index.html"><li id="home">HOME</li></a>
+       </ul>
+     </div>
+      </div>
+      <img hidden="true" class="logo" src="logo.png" alt="My Logo">
+      <h1>Joshua Thompson</h1>
+      <img class="userPhoto" src="user.svg" alt="User Photo">
+     <div class="motto">
+      <p>&quotWe must become the change we wish to see in the world.&quot</p>
+      <p id="cite">– Mohandas</p>
+    </div>
+    <div class="contactInfo" style="visibility : hidden;">
+      <p style="font-weight:bold;">Please feel free to reach out to me if you have any questions.</p><br>
+      <br><br>
+      <p><span style="color : #0aba8a; font-weight : bold;">Primary Email:</span> thompson.joshua95@yahoo.com</p>
+      <p><span style="color : #0aba8a; font-weight : bold;">Youtube Channel Email:</span> th3codingknight@gmail.com</p>
+      <p><span style="color : #0aba8a; font-weight : bold;">Telephone Number:</span> (876)-317-9207</p>
+      <br>
+      <p style="color : #0aba8a; font-weight : bold;">Mailing Address:</p>
+      <p>Lot 30 Friendship Housing Scheme</p>
+      <p>Kitson Town</p>
+      <p>Spanish Town</p>
+      <p>St Catherine, Jamaica</p>
+    </div>
+    <img style="opacity : 0;"  id="contactImage" class="contactImage" src="whatsapp.png" alt="Whatsapp Image">
+    <img style="opacity : 0;"  id="emailImage" class="emailImage"; src="email.png" alt="Email Image">
+    <br>
+  </div>
+</div>
+  </body>
+  <script type="text/javascript">
+    var contactInfo = document.querySelector('.contactInfo');
+    var contact = document.querySelector('.contact');
+    var contactImage = document.querySelector('.contactImage');
+    var emailImage = document.querySelector('.emailImage');
+
+    var i = 0;
+    var opac = 0.0;
+    var check = 0;
+
+    contact.addEventListener('click',changeState);
+
+    function changeState(){
+      if(contactInfo.style.visibility === "visible"){
+        contactInfo.style.visibility = "hidden";
+        opac = 0.0;
+        contactImage.style.opacity = opac;
+        emailImage.style.opacity = opac;
+      }else if(contactInfo.style.visibility === "hidden"){
+        contactInfo.style.visibility = "visible";
+        check = 0;
+        opacity = 0.0;
+       iconShow1();
+      }
+    }
+
+    function iconShow1(){
+    if(contactInfo.style.visibility === "visible"){
+     iconShow2();
+   }else{
+     check = 13;
+   }
+    }
+       function iconShow2(){
+       if(check < 50){
+        check++;
+        emailImage.style.opacity = opac += 0.01;
+        contactImage.style.opacity = opac += 0.01;
+        setTimeout(nothing,200);
+        contact.style.visibility = "hidden";
+      }else{
+        contact.style.visibility = "visible";
+      }}
+
+      function nothing(){
+        iconShow2();
+      }
+
+  </script>
+</html>
