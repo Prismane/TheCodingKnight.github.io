@@ -33,6 +33,15 @@
   }
   .carousel-fade .carousel-control {
     z-index: 2;
+  }
+   }
+   #newsHeader:hover{
+     text-decoration: underline;
+     cursor: pointer;
+   }
+   #goTo:hover{
+     cursor: pointer;
+     text-decoration: underline;
    }
    </style>
   </head>
@@ -76,16 +85,17 @@
   </nav>
 
    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="margin:auto; width:100%; margin-top:40px; background-color:black; ; ">
-  <!-- Indicators -->
+  <!-- Indicators
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:black;"></li>
     <li data-target="#myCarousel" data-slide-to="1" style="background-color:black;"></li>
     <li data-target="#myCarousel" data-slide-to="2" style="background-color:black;"></li>
     <li data-target="#myCarousel" data-slide-to="3" style="background-color:black;"></li>
   </ol>
+-->
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" style="margin:auto; width:84%; ">
+  <div class="carousel-inner" style="margin-left:32px; width:70%; ">
     <div class="item active">
       <img src="student3.jpg" alt="Los Angeles"  style="margin:auto; height: 400px; width:100%;">
     </div>
@@ -106,13 +116,20 @@
 </div>
 
   <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev" style=" background-color:black; width:120px; opacity:1;">
-    <span class="glyphicon glyphicon-chevron-left"  ></span>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev" style=" background-color:black; width:30px; opacity:1;">
+
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next" style=" background-color:black; opacity:1; width:420px;">
-    <span class="glyphicon glyphicon-chevron-right" ></span>
-    <span class="sr-only">Next</span>
+  <a class="right carousel-control"   style=" background-color:black; opacity:1; width:420px;">
+
+    <div class="container" style="width:80%; margin:auto; margin-top:60px;">
+
+
+     <p class="pull-left text-left" id="newsHeader" style="margin-left:-30px;">Uwi Mona School Wins International College Food Eating Competition</p>
+     <p class="text-left" style="font-size:15px; margin-left:-30px; "><small>Despite the huge amount of schools that entered the International Food Eating Competition. The Univeristy Of West Indies was able to come out on top.</small></p>
+     <p class="text-left" id="goTo" style="font-size:15px; margin-left:-30px; margin-top:20px;">Read Full Article<span class="glyphicon glyphicon-resize-full"></span></p>
+   </div>
+
   </a>
 </div>
 
