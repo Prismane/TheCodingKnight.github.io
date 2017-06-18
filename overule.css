@@ -1,0 +1,52 @@
+.nav-item{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 5px;
+
+}
+.nav-item:hover{
+  background-color: #2f8d2b;
+  border-radius: 2px 2px 2px 2px;
+}
+.navbar-nav{
+  padding-left: 50px;
+  color: white;
+}
+a{
+  color: black;
+}
+a:hover{
+  color:white;
+}
+.signUp{
+    background-color: #2f8d2b;
+    border-radius: 2px 2px 2px 2px;
+    margin-left: 10px;
+}
+.signUp:hover{
+  background-color: green;
+}
+#signUp{
+  color: white;
+}
+.login{
+  background-color: #222121;
+  border-radius: 2px 2px 2px 2px;
+}
+.login:hover{
+  background-color: black;
+}
+#login{
+  color:white;
+}
+.active{
+  background-color: #222121;
+  border-radius: 2px 2px 2px 2px;
+
+}
+#active{
+  color:white;
+}
+.active:hover{
+    background-color: #222121;
+}
